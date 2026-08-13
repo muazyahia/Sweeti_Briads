@@ -318,10 +318,18 @@ export const LanguageProvider = ({ children }) => {
             
             // Map Hero
             if (content.heroData) {
-              if (content.heroData.badge) { newEn["hero-badge"] = content.heroData.badge; newAr["hero-badge"] = content.heroData.badge; }
-              if (content.heroData.accent) { newEn["hero-accent"] = content.heroData.accent; newAr["hero-accent"] = content.heroData.accent; }
-              if (content.heroData.main) { newEn["hero-main"] = content.heroData.main; newAr["hero-main"] = content.heroData.main; }
-              if (content.heroData.desc) { newEn["hero-desc"] = content.heroData.desc; newAr["hero-desc"] = content.heroData.desc; }
+              if (content.heroData.badgeEn) { newEn["hero-badge"] = content.heroData.badgeEn; } else if (content.heroData.badge) { newEn["hero-badge"] = content.heroData.badge; }
+              if (content.heroData.badgeAr) { newAr["hero-badge"] = content.heroData.badgeAr; }
+              
+              if (content.heroData.accentEn) { newEn["hero-accent"] = content.heroData.accentEn; } else if (content.heroData.accent) { newEn["hero-accent"] = content.heroData.accent; }
+              if (content.heroData.accentAr) { newAr["hero-accent"] = content.heroData.accentAr; }
+              
+              if (content.heroData.mainEn) { newEn["hero-main"] = content.heroData.mainEn; } else if (content.heroData.main) { newEn["hero-main"] = content.heroData.main; }
+              if (content.heroData.mainAr) { newAr["hero-main"] = content.heroData.mainAr; }
+              
+              if (content.heroData.descEn) { newEn["hero-desc"] = content.heroData.descEn; } else if (content.heroData.desc) { newEn["hero-desc"] = content.heroData.desc; }
+              if (content.heroData.descAr) { newAr["hero-desc"] = content.heroData.descAr; }
+              
               if (content.heroData.statNeat) { newEn["stat-neat"] = content.heroData.statNeat; newAr["stat-neat"] = content.heroData.statNeat; }
               if (content.heroData.statNeatValue) { newEn["stat-neat-val"] = content.heroData.statNeatValue; newAr["stat-neat-val"] = content.heroData.statNeatValue; }
               if (content.heroData.statWeeks) { newEn["stat-weeks"] = content.heroData.statWeeks; newAr["stat-weeks"] = content.heroData.statWeeks; }
@@ -333,29 +341,47 @@ export const LanguageProvider = ({ children }) => {
             
             // Map Signature
             if (content.signatureData) {
-              if (content.signatureData.sub) { newEn["styles-sub"] = content.signatureData.sub; newAr["styles-sub"] = content.signatureData.sub; }
-              if (content.signatureData.title) { newEn["styles-title"] = content.signatureData.title; newAr["styles-title"] = content.signatureData.title; }
-              if (content.signatureData.desc) { newEn["styles-desc"] = content.signatureData.desc; newAr["styles-desc"] = content.signatureData.desc; }
+              if (content.signatureData.subEn) { newEn["styles-sub"] = content.signatureData.subEn; } else if (content.signatureData.sub) { newEn["styles-sub"] = content.signatureData.sub; }
+              if (content.signatureData.subAr) { newAr["styles-sub"] = content.signatureData.subAr; }
+              
+              if (content.signatureData.titleEn) { newEn["styles-title"] = content.signatureData.titleEn; } else if (content.signatureData.title) { newEn["styles-title"] = content.signatureData.title; }
+              if (content.signatureData.titleAr) { newAr["styles-title"] = content.signatureData.titleAr; }
+              
+              if (content.signatureData.descEn) { newEn["styles-desc"] = content.signatureData.descEn; } else if (content.signatureData.desc) { newEn["styles-desc"] = content.signatureData.desc; }
+              if (content.signatureData.descAr) { newAr["styles-desc"] = content.signatureData.descAr; }
             }
             
             // Map About
             if (content.aboutData) {
-              if (content.aboutData.sub) { newEn["about-sub"] = content.aboutData.sub; newAr["about-sub"] = content.aboutData.sub; }
-              if (content.aboutData.title) { newEn["about-title"] = content.aboutData.title; newAr["about-title"] = content.aboutData.title; }
-              if (content.aboutData.desc) { newEn["about-desc-1"] = content.aboutData.desc; newAr["about-desc-1"] = content.aboutData.desc; }
+              if (content.aboutData.subEn) { newEn["about-sub"] = content.aboutData.subEn; } else if (content.aboutData.sub) { newEn["about-sub"] = content.aboutData.sub; }
+              if (content.aboutData.subAr) { newAr["about-sub"] = content.aboutData.subAr; }
+              
+              if (content.aboutData.titleEn) { newEn["about-title"] = content.aboutData.titleEn; } else if (content.aboutData.title) { newEn["about-title"] = content.aboutData.title; }
+              if (content.aboutData.titleAr) { newAr["about-title"] = content.aboutData.titleAr; }
+              
+              if (content.aboutData.descEn) { newEn["about-desc-1"] = content.aboutData.descEn; } else if (content.aboutData.desc) { newEn["about-desc-1"] = content.aboutData.desc; }
+              if (content.aboutData.descAr) { newAr["about-desc-1"] = content.aboutData.descAr; }
             }
             
             // Map Booking
             if (content.bookingData) {
-              if (content.bookingData.sub) { newEn["booking-sub"] = content.bookingData.sub; newAr["booking-sub"] = content.bookingData.sub; }
-              if (content.bookingData.title) { newEn["booking-title"] = content.bookingData.title; newAr["booking-title"] = content.bookingData.title; }
-              if (content.bookingData.desc) { newEn["booking-desc"] = content.bookingData.desc; newAr["booking-desc"] = content.bookingData.desc; }
+              if (content.bookingData.subEn) { newEn["booking-sub"] = content.bookingData.subEn; } else if (content.bookingData.sub) { newEn["booking-sub"] = content.bookingData.sub; }
+              if (content.bookingData.subAr) { newAr["booking-sub"] = content.bookingData.subAr; }
+              
+              if (content.bookingData.titleEn) { newEn["booking-title"] = content.bookingData.titleEn; } else if (content.bookingData.title) { newEn["booking-title"] = content.bookingData.title; }
+              if (content.bookingData.titleAr) { newAr["booking-title"] = content.bookingData.titleAr; }
+              
+              if (content.bookingData.descEn) { newEn["booking-desc"] = content.bookingData.descEn; } else if (content.bookingData.desc) { newEn["booking-desc"] = content.bookingData.desc; }
+              if (content.bookingData.descAr) { newAr["booking-desc"] = content.bookingData.descAr; }
             }
             
             // Map Reviews
             if (content.reviewsData) {
-              if (content.reviewsData.title) { newEn["reviews-title"] = content.reviewsData.title; newAr["reviews-title"] = content.reviewsData.title; }
-              if (content.reviewsData.desc) { newEn["reviews-desc"] = content.reviewsData.desc; newAr["reviews-desc"] = content.reviewsData.desc; }
+              if (content.reviewsData.titleEn) { newEn["reviews-title"] = content.reviewsData.titleEn; } else if (content.reviewsData.title) { newEn["reviews-title"] = content.reviewsData.title; }
+              if (content.reviewsData.titleAr) { newAr["reviews-title"] = content.reviewsData.titleAr; }
+              
+              if (content.reviewsData.descEn) { newEn["reviews-desc"] = content.reviewsData.descEn; } else if (content.reviewsData.desc) { newEn["reviews-desc"] = content.reviewsData.desc; }
+              if (content.reviewsData.descAr) { newAr["reviews-desc"] = content.reviewsData.descAr; }
             }
             
             // Map Contact
