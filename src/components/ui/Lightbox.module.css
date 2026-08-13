@@ -1,0 +1,106 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s ease;
+}
+
+.closeBtn:hover {
+  color: var(--brand-primary);
+}
+
+.contentWrapper {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: scaleUp 0.3s ease;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Added key animation for the image to slide in slightly */
+.image {
+  animation: scaleUp 0.3s ease;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 36px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.navBtn:hover {
+  background: var(--brand-primary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prevBtn {
+  left: 24px;
+}
+
+.nextBtn {
+  right: 24px;
+}
+
+@media (max-width: 768px) {
+  .navBtn {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+  
+  .prevBtn { left: 16px; }
+  .nextBtn { right: 16px; }
+}

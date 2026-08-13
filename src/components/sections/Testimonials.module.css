@@ -1,0 +1,196 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.desc {
+  font-size: 16px;
+  color: var(--body-text);
+}
+
+.sparkle {
+  color: var(--brand-primary);
+}
+
+.scrollContainer {
+  display: flex;
+  gap: var(--spacing-card-gap);
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  flex: 1;
+  font-style: italic;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--bg-base-start);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+    padding: 24px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+
+
+.addReviewBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  animation: fadeSlideUp 0.4s ease-out;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: var(--body-text);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.closeBtn:hover {
+  color: var(--brand-primary);
+}
+
+.addReviewTitle {
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--font-display);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--body-text);
+}
+
+.input, .textarea {
+  background: var(--bg-base-end);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-family: inherit;
+  color: var(--heading-text);
+  transition: all 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  background: var(--card-bg);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitWrapper {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

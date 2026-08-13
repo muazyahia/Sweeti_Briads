@@ -1,0 +1,289 @@
+/* [project]/src/components/sections/SignatureStyles.module.css [app-client] (css) */
+.SignatureStyles-module__SUrO9G__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.SignatureStyles-module__SUrO9G__subtitle {
+  font-family: var(--font-script);
+  color: var(--brand-primary);
+  margin-bottom: 8px;
+  font-size: 24px;
+  display: block;
+}
+
+.SignatureStyles-module__SUrO9G__title {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 40px;
+  display: flex;
+}
+
+.SignatureStyles-module__SUrO9G__desc {
+  opacity: .8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.SignatureStyles-module__SUrO9G__sparkle {
+  color: var(--brand-primary);
+}
+
+.SignatureStyles-module__SUrO9G__tabs {
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+.SignatureStyles-module__SUrO9G__tabBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  color: var(--body-text);
+  cursor: pointer;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.SignatureStyles-module__SUrO9G__activeTab {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+  box-shadow: 0 4px 15px var(--shadow-soft);
+}
+
+.SignatureStyles-module__SUrO9G__showcase {
+  align-items: center;
+  gap: 48px;
+  display: flex;
+}
+
+.SignatureStyles-module__SUrO9G__mediaLayout, .SignatureStyles-module__SUrO9G__info {
+  animation: .4s ease-in-out SignatureStyles-module__SUrO9G__fadeIn;
+}
+
+@keyframes SignatureStyles-module__SUrO9G__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SignatureStyles-module__SUrO9G__mediaLayout {
+  flex: 1;
+  gap: 16px;
+  display: flex;
+  position: relative;
+}
+
+.SignatureStyles-module__SUrO9G__portraitCard {
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 0 0 40px var(--glow-neon), 0 0 80px #ff408133;
+  border-radius: 50%;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.SignatureStyles-module__SUrO9G__floatingImage {
+  animation: 6s ease-in-out infinite SignatureStyles-module__SUrO9G__floatBubble;
+}
+
+@keyframes SignatureStyles-module__SUrO9G__floatBubble {
+  0% {
+    transform: translateY(0)scale(1);
+  }
+
+  50% {
+    transform: translateY(-15px)scale(1.02);
+  }
+
+  100% {
+    transform: translateY(0)scale(1);
+  }
+}
+
+.SignatureStyles-module__SUrO9G__portraitCard img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.SignatureStyles-module__SUrO9G__posterCard {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px var(--shadow-soft);
+  cursor: pointer;
+  height: 350px;
+  transition: all var(--transition-smooth);
+  flex: 1;
+  align-self: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.SignatureStyles-module__SUrO9G__posterCard img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-smooth);
+}
+
+.SignatureStyles-module__SUrO9G__posterCard:hover {
+  box-shadow: 0 14px 40px var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.SignatureStyles-module__SUrO9G__posterCard:hover img {
+  transform: scale(1.03);
+}
+
+.SignatureStyles-module__SUrO9G__posterBadge {
+  color: #fff;
+  border-radius: var(--radius-pill);
+  z-index: 2;
+  background: #0009;
+  padding: 4px 12px;
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.SignatureStyles-module__SUrO9G__hoverOverlay {
+  color: #fff;
+  opacity: 0;
+  z-index: 3;
+  background: #e91e6366;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity .3s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.SignatureStyles-module__SUrO9G__posterCard:hover .SignatureStyles-module__SUrO9G__hoverOverlay {
+  opacity: 1;
+}
+
+.SignatureStyles-module__SUrO9G__info {
+  flex: 1;
+}
+
+.SignatureStyles-module__SUrO9G__category {
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.SignatureStyles-module__SUrO9G__styleTitle {
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.SignatureStyles-module__SUrO9G__tagline {
+  opacity: .8;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.SignatureStyles-module__SUrO9G__textDesc {
+  opacity: .9;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.SignatureStyles-module__SUrO9G__features {
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.SignatureStyles-module__SUrO9G__featureBullet {
+  gap: 16px;
+  display: flex;
+}
+
+.SignatureStyles-module__SUrO9G__bulletIcon {
+  color: var(--brand-primary);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.SignatureStyles-module__SUrO9G__featureBullet h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.SignatureStyles-module__SUrO9G__featureBullet p {
+  opacity: .8;
+  margin: 0;
+  font-size: 14px;
+}
+
+.SignatureStyles-module__SUrO9G__actions {
+  gap: 16px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .SignatureStyles-module__SUrO9G__showcase, .SignatureStyles-module__SUrO9G__actions {
+    flex-direction: column;
+  }
+
+  .SignatureStyles-module__SUrO9G__tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .SignatureStyles-module__SUrO9G__tabBtn {
+    text-align: center;
+    flex: calc(50% - 12px);
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  .SignatureStyles-module__SUrO9G__mediaLayout {
+    flex-direction: column;
+  }
+
+  .SignatureStyles-module__SUrO9G__posterCard {
+    align-self: center;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=src_components_sections_SignatureStyles_module_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,127 @@
+.wrapper {
+  display: flex;
+  gap: 48px;
+  padding: 48px;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.eyebrow {
+  color: var(--brand-primary);
+  font-family: var(--font-script);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.desc {
+  line-height: 1.7;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.paletteShowcase {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--card-border);
+}
+
+.paletteTitle {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.colorsRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.colorSwatch {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: help;
+  transition: transform 0.3s ease;
+}
+
+.colorSwatch:hover {
+  transform: translateY(-5px);
+}
+
+.colorSwatch span {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.colorSwatch:hover span {
+  opacity: 1;
+}
+
+.visualColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.brandBoardFrame {
+  position: relative;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  background: white;
+  box-shadow: 0 15px 40px var(--shadow-soft);
+  transform: rotate(2deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.brandBoardFrame:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.brandBoardFrame img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.zoomBadge {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  background: var(--brand-primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.4);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

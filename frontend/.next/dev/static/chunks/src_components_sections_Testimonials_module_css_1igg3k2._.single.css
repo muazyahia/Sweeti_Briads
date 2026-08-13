@@ -1,0 +1,211 @@
+/* [project]/src/components/sections/Testimonials.module.css [app-client] (css) */
+.Testimonials-module__X7R5sW__header {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__title {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__desc {
+  color: var(--body-text);
+  font-size: 16px;
+}
+
+.Testimonials-module__X7R5sW__sparkle {
+  color: var(--brand-primary);
+}
+
+.Testimonials-module__X7R5sW__scrollContainer {
+  gap: var(--spacing-card-gap);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 16px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.Testimonials-module__X7R5sW__scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.Testimonials-module__X7R5sW__card {
+  scroll-snap-align: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 24px;
+  width: 350px;
+  padding: 40px;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__text {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  flex: 1;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.Testimonials-module__X7R5sW__user {
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__avatar {
+  border: 2px solid var(--bg-base-start);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.Testimonials-module__X7R5sW__name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .Testimonials-module__X7R5sW__card {
+    width: 280px;
+    padding: 24px;
+  }
+
+  .Testimonials-module__X7R5sW__title {
+    font-size: 24px;
+  }
+
+  .Testimonials-module__X7R5sW__text {
+    font-size: 14px;
+  }
+}
+
+.Testimonials-module__X7R5sW__addReviewBtnContainer {
+  justify-content: center;
+  margin-top: 48px;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__modalOverlay {
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  background: #0009;
+  justify-content: center;
+  align-items: center;
+  animation: .3s Testimonials-module__X7R5sW__fadeIn;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Testimonials-module__X7R5sW__modalContent {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  animation: .4s ease-out Testimonials-module__X7R5sW__fadeSlideUp;
+  position: relative;
+}
+
+.Testimonials-module__X7R5sW__closeBtn {
+  color: var(--body-text);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 28px;
+  transition: color .2s;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.Testimonials-module__X7R5sW__closeBtn:hover {
+  color: var(--brand-primary);
+}
+
+.Testimonials-module__X7R5sW__addReviewTitle {
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--font-display);
+  margin-bottom: 24px;
+}
+
+.Testimonials-module__X7R5sW__formGroup {
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.Testimonials-module__X7R5sW__formGroup label {
+  color: var(--body-text);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Testimonials-module__X7R5sW__input, .Testimonials-module__X7R5sW__textarea {
+  background: var(--bg-base-end);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  color: var(--heading-text);
+  padding: 12px 16px;
+  font-family: inherit;
+  transition: all .3s;
+}
+
+.Testimonials-module__X7R5sW__input:focus, .Testimonials-module__X7R5sW__textarea:focus {
+  border-color: var(--brand-primary);
+  background: var(--card-bg);
+  outline: none;
+}
+
+.Testimonials-module__X7R5sW__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.Testimonials-module__X7R5sW__submitWrapper {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.Testimonials-module__X7R5sW__fadeIn {
+  animation: .5s ease-out forwards Testimonials-module__X7R5sW__fadeIn;
+}
+
+@keyframes Testimonials-module__X7R5sW__fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Testimonials-module__X7R5sW__fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=src_components_sections_Testimonials_module_css_1igg3k2._.single.css.map*/

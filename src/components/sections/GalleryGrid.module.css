@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sparkle {
+  color: var(--brand-primary);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filterPill {
+  padding: 8px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--body-text);
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterPill:hover, .filterPill.active {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+}
+
+.masonryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-card-gap);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gridItem {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 3/4; /* Forcing a standard aspect ratio as a simplified masonry look for now */
+}
+
+/* Let's make some items span different rows to simulate masonry if we had real varying sizes,
+   but a simple flex or grid with fixed aspect ratios is often cleaner and matches the design well. */
+.gridItem:nth-child(2n) {
+  margin-top: 24px;
+}
+.gridItem:nth-child(2n+1) {
+  margin-bottom: 24px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.gridItem:hover .image {
+  transform: scale(1.03); /* Subtle premium zoom */
+}
+
+.viewMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 992px) {
+  .masonryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .masonryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gridItem:nth-child(2n) {
+    margin-top: 0;
+  }
+  .gridItem:nth-child(2n+1) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonryGrid {
+    grid-template-columns: 1fr;
+  }
+}

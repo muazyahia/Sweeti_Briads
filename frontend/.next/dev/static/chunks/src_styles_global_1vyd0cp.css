@@ -1,0 +1,182 @@
+@import "https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap";
+/* [project]/src/styles/global.css [app-client] (css) */
+:root {
+  --bg-base-start: #fdf0f5;
+  --bg-base-end: #fce4ee;
+  --brand-primary: #e91e63;
+  --brand-primary-alt: #ec407a;
+  --heading-text: #4a1e2b;
+  --accent-script: #d6336c;
+  --body-text: #6b4550;
+  --card-bg: #ffffffd9;
+  --card-border: #f5d6e3;
+  --glow-halo: #ff6fa540;
+  --shadow-soft: #e91e6314;
+  --shadow-hover: #e91e6326;
+  --transition-smooth: .25s cubic-bezier(.4, 0, .2, 1);
+  --glow-neon: #ffffffe6;
+  --font-display: "Playfair Display", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-body: "Poppins", sans-serif;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --spacing-section: 60px;
+  --spacing-card-gap: 32px;
+  --container-max-width: 1280px;
+}
+
+[data-theme="dark"] {
+  --bg-base-start: #1a0e14;
+  --bg-base-end: #2b131f;
+  --heading-text: #fdf0f5;
+  --body-text: #b8949e;
+  --card-bg: #2e1620a6;
+  --card-border: #ff4d8d33;
+  --glow-halo: #ff4d8d80;
+  --shadow-soft: #0003;
+  --shadow-hover: #ff4d8d26;
+  --glow-neon: #ff4d8d80;
+  --accent-script: #ff4d8d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, var(--bg-base-start) 0%, var(--bg-base-end) 100%);
+  color: var(--body-text);
+  min-height: 100vh;
+  transition: background var(--transition-smooth), color var(--transition-smooth);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--heading-text);
+  transition: color var(--transition-smooth);
+  font-weight: 500;
+}
+
+.script-accent {
+  font-family: var(--font-script);
+  color: var(--accent-script);
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px var(--shadow-soft);
+  transition: all var(--transition-smooth);
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 32px var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.reveal-fade-up {
+  opacity: 0;
+  transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1);
+  transform: translateY(50px);
+}
+
+.reveal-fade-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-left {
+  opacity: 0;
+  transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1);
+  transform: translateX(-60px);
+}
+
+.reveal-fade-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-fade-right {
+  opacity: 0;
+  transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1);
+  transform: translateX(60px);
+}
+
+.reveal-fade-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transition: opacity .7s cubic-bezier(.16, 1, .3, 1), transform .7s cubic-bezier(.16, 1, .3, 1);
+  transform: scale(.85);
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.stagger-item {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(.16, 1, .3, 1), transform .6s cubic-bezier(.16, 1, .3, 1);
+  transform: translateY(30px);
+}
+
+.stagger-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.main-content .section {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=src_styles_global_1vyd0cp.css.map*/

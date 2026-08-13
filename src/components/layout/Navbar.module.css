@@ -1,0 +1,131 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-bottom: 1px solid transparent;
+  padding: 16px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 4px 20px var(--shadow-soft);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImg {
+  height: 44px;
+  width: auto;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.sweeti {
+  font-family: var(--font-script);
+  color: var(--brand-primary);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.braids {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--heading-text);
+  text-transform: uppercase;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--body-text);
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--brand-primary);
+  transition: width 0.3s ease, left 0.3s ease;
+  border-radius: 2px;
+}
+
+.navLink:hover {
+  color: var(--brand-primary);
+}
+
+.navLink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.activeLink {
+  color: var(--brand-primary);
+}
+
+.activeLink::after {
+  width: 100%;
+  left: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.themeToggle {
+  background: transparent;
+  border: none;
+  color: var(--heading-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.themeToggle:hover {
+  background: rgba(233, 30, 99, 0.1);
+  transform: rotate(20deg);
+}
+

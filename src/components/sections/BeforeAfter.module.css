@@ -1,0 +1,133 @@
+.wrapper {
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--heading-text);
+}
+
+.sparkle {
+  color: var(--brand-primary);
+}
+
+.navButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.navBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-base-start);
+  border: 1px solid var(--card-border);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+}
+
+.scrollContainer {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  scroll-snap-type: x mandatory;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: max(260px, calc((100% - 96px) / 4));
+  scroll-snap-align: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 140px;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.iconContainer {
+  position: relative;
+  z-index: 2;
+  margin: 0 -20px;
+}
+
+.sliderIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px var(--shadow-soft);
+  border: 2px solid #fff;
+}
+
+[data-theme='dark'] .sliderIcon {
+  border-color: var(--bg-base-start);
+}
+
+@media (max-width: 768px) {
+  .pair {
+    min-width: 260px;
+  }
+  
+  .imageContainer {
+    width: 120px;
+  }
+  
+  .wrapper {
+    padding: 24px;
+  }
+}

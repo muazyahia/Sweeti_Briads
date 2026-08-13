@@ -1,0 +1,256 @@
+.hero {
+  position: relative;
+  padding: 24px 0 60px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.textContent {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+
+.title {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-top: 8px;
+}
+
+.title .script-accent {
+  font-size: 72px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+
+
+.imageContent {
+  flex: 0 0 55%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroHalo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+}
+
+/* ========== IMAGE CAROUSEL ========== */
+.imageCarousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 5;
+  z-index: 0; /* below the CurvedNeonLine z-index:1 */
+}
+
+/* Neon glow behind images - always pink */
+.imageCarousel::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  bottom: 15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 50% 40%,
+    rgba(233, 30, 99, 0.35) 0%,
+    rgba(255, 77, 141, 0.2) 40%,
+    transparent 70%
+  );
+  z-index: -1;
+  filter: blur(40px);
+  animation: neonPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  0%   { opacity: 0.6; transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1.04); }
+}
+
+.heroImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: contain;
+  object-position: center top;
+  will-change: transform, opacity, filter;
+  /* Only fade at the bottom — sides fully visible */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 55%,
+    rgba(0,0,0,0.6) 72%,
+    transparent 90%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 55%,
+    rgba(0,0,0,0.6) 72%,
+    transparent 90%
+  );
+  /* Hidden by default */
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* --- ACTIVE image: fade + scale in --- */
+.imgActive {
+  animation: imgEnter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: auto;
+}
+
+/* --- EXIT image: fade + scale out --- */
+.imgExit {
+  animation: imgLeave 0.6s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+/* --- HIDDEN (not current, not exiting) --- */
+.imgHidden {
+  opacity: 0;
+  transform: scale(1.08) translateY(16px);
+}
+
+@keyframes imgEnter {
+  0% {
+    opacity: 0;
+    transform: scale(1.08) translateY(16px);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes imgLeave {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.94) translateY(-12px);
+    filter: blur(4px);
+  }
+}
+
+/* ========== DOTS ========== */
+.dotsRow {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 5;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-primary);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-smooth);
+}
+
+.dot:hover {
+  background: rgba(233, 30, 99, 0.3);
+  transform: scale(1.2);
+}
+
+.dotActive {
+  background: var(--brand-primary);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(233, 30, 99, 0.4);
+}
+
+@media (max-width: 992px) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .textContent {
+    flex: 1;
+    align-items: center;
+  }
+
+  .imageContent {
+    flex: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+
+  
+  .title {
+    font-size: 48px;
+  }
+  
+  .title .script-accent {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 40px;
+  }
+  
+  .title .script-accent {
+    font-size: 48px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .actions button {
+    width: 100%;
+  }
+}

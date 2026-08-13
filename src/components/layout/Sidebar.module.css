@@ -1,0 +1,345 @@
+/* ========== SIDEBAR LAYOUT ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 12px;
+  background: var(--card-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid var(--card-border);
+  box-shadow: 2px 0 20px var(--shadow-soft);
+  transition: width 0.3s ease-in-out,
+              padding 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* OPEN: wider, pushes content */
+.open {
+  width: 220px;
+  padding: 24px 20px;
+}
+
+/* CLOSED: thin floating icon strip, does NOT push content */
+.closed {
+  width: 60px;
+  padding: 24px 8px;
+}
+
+/* ========== TOGGLE BUTTON ========== */
+.toggleBtn {
+  position: fixed;
+  top: 28px;
+  z-index: 1001;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  background: var(--card-bg);
+  color: var(--brand-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease-in-out,
+              background 0.25s ease-in-out,
+              transform 0.25s ease-in-out;
+  box-shadow: 0 2px 8px var(--shadow-soft);
+}
+
+.toggleBtn:hover {
+  background: var(--brand-primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.toggleBtn:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.toggleBtn:active {
+  transform: scale(0.97);
+}
+
+.toggleBtnOpen {
+  left: 206px;
+}
+
+.toggleBtnClosed {
+  left: 48px;
+}
+
+.desktopIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+/* ========== MOBILE ========== */
+.overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .closed {
+    width: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .toggleBtnClosed {
+    left: 16px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 12px var(--shadow-soft);
+  }
+
+  .desktopIcon {
+    display: none;
+  }
+
+  .mobileIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========== LOGO ========== */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 20px;
+  min-height: 52px;
+  justify-content: center;
+}
+
+.open .logoSection {
+  justify-content: flex-start;
+}
+
+.logoImg {
+  width: auto;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  animation: labelIn 0.35s ease;
+}
+
+@keyframes labelIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.sweeti {
+  font-family: var(--font-script);
+  color: var(--brand-primary);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.braids {
+  font-family: var(--font-body);
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: var(--heading-text);
+  text-transform: uppercase;
+}
+
+/* ========== NAVIGATION ========== */
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--body-text);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+  white-space: nowrap;
+}
+
+/* When open, align left */
+.open .navLink {
+  justify-content: flex-start;
+}
+
+.navLink:hover {
+  color: var(--brand-primary);
+  background: rgba(233, 30, 99, 0.04);
+}
+
+/* ========== ICON (closed state only) ========== */
+.navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  color: var(--body-text);
+  transition: color var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.navLink:hover .navIcon {
+  color: var(--brand-primary);
+  transform: scale(1.05);
+}
+
+.active .navIcon {
+  color: var(--brand-primary);
+}
+
+/* ========== LABEL (open state only) ========== */
+.navLabel {
+  animation: labelIn 0.35s ease;
+}
+
+/* ========== ACTIVE LINK ========== */
+.active {
+  color: var(--brand-primary);
+  background: rgba(233, 30, 99, 0.1);
+  font-weight: 600;
+}
+
+.activeIndicator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 55%;
+  background: var(--brand-primary);
+  border-radius: 0 3px 3px 0;
+  animation: indicatorPop 0.3s ease-in-out;
+}
+
+@keyframes indicatorPop {
+  from { height: 0; opacity: 0; }
+  to { height: 55%; opacity: 1; }
+}
+
+/* ========== BOTTOM ACTIONS ========== */
+.bottomActions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--card-border);
+  margin-top: auto;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--body-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  white-space: nowrap;
+}
+
+.open .actionBtn {
+  justify-content: flex-start;
+}
+
+.actionBtn:hover {
+  background: rgba(233, 30, 99, 0.08);
+  color: var(--brand-primary);
+}
+
+/* ========== BOOK BUTTON ========== */
+.bookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-alt));
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 3px 12px rgba(233, 30, 99, 0.25);
+  white-space: nowrap;
+}
+
+.bookBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(233, 30, 99, 0.3);
+}
+
+.bookBtn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.bookBtn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

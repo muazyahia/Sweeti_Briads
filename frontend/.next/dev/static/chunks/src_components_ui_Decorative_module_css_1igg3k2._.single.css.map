@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ui/Decorative.module.css"],"sourcesContent":[".haloGlow {\n  position: absolute;\n  width: 400px;\n  height: 400px;\n  border-radius: 50%;\n  background: var(--glow-halo);\n  filter: blur(100px);\n  z-index: 0;\n  pointer-events: none;\n  transition: background 0.4s ease;\n}\n\n.neonLineContainer {\n  width: 100%;\n  overflow: hidden;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  height: 100px;\n  pointer-events: none;\n  z-index: 3; /* above hero image carousel */\n}\n\n.neonLine {\n  width: 120%;\n  height: 200px;\n  position: absolute;\n  top: 50px;\n  left: -10%;\n  border-radius: 50%;\n  border-top: 2px solid var(--glow-neon);\n  box-shadow: 0 -10px 40px var(--glow-neon);\n  transition: border-color 0.4s ease, box-shadow 0.4s ease;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAYA;;;;;;;;;;;AAWA"}}]
+}

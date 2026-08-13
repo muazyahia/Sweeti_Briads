@@ -1,0 +1,314 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 48px; /* Increased top/bottom padding for premium feel */
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 32px; /* Increased from 24px */
+}
+
+.title {
+  font-size: 40px; /* Increased slightly for hierarchy */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.sparkle {
+  color: var(--brand-primary);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.bookingGrid {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+}
+
+.formCard {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 40px; /* Increased from 32px */
+  border: 1px solid var(--card-border);
+}
+
+.summaryCard {
+  flex: 1;
+  background: rgba(233, 30, 99, 0.1);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  border: 1px solid var(--brand-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 16px 0;
+}
+
+.summaryItem {
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px dashed var(--card-border);
+  padding-bottom: 16px;
+}
+
+.summaryItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summaryItem span:first-child {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--body-text);
+  opacity: 0.8;
+}
+
+.summaryItem span:last-child {
+  font-weight: 600;
+  color: var(--brand-primary);
+  font-size: 16px;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Increased from 32px */
+  position: relative;
+}
+
+.stepper::before {
+  content: '';
+  position: absolute;
+  top: 15px; /* Centered with 32px stepNum */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thinner, more elegant line */
+  background: rgba(233, 30, 99, 0.15); /* Softer line color */
+  z-index: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+  font-size: 14px;
+  color: var(--body-text);
+  opacity: 0.6;
+  transition: opacity var(--transition-smooth);
+}
+
+.activeStep {
+  opacity: 1;
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+.completedStep {
+  opacity: 1;
+}
+
+.stepNum {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 2px solid rgba(233, 30, 99, 0.3); /* Softer default border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all var(--transition-smooth);
+}
+
+.activeStep .stepNum {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: white;
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.completedStep .stepNum {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: white;
+}
+
+.stepContent {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stepContent h3 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.radioGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.radioLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding: 24px 16px;
+  border: 1px solid rgba(233, 30, 99, 0.2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.radioLabel:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: var(--brand-primary-alt);
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.selectedRadio {
+  border-color: var(--brand-primary);
+  background: rgba(233, 30, 99, 0.08);
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2);
+}
+
+.radioLabel span {
+  font-family: var(--font-script);
+  font-size: 18px;
+  color: var(--heading-text);
+}
+
+.selectedRadio span {
+  color: var(--brand-primary);
+}
+
+.radioImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--heading-text);
+  font-family: inherit;
+}
+
+.inputError {
+  border-color: red;
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 16px;
+}
+
+.fullWidthBtn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bookingGrid {
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    padding: 32px 16px; /* Greatly reduced side padding on mobile */
+  }
+  
+  .formCard {
+    padding: 24px 16px; /* Reduced padding for more space inside */
+  }
+  
+  .step span {
+    font-size: 11px; /* Smaller text for stepper */
+  }
+  
+  .stepper {
+    margin-bottom: 24px;
+  }
+
+  .radioGroup {
+    gap: 8px; /* Less gap on mobile */
+  }
+  
+  .radioLabel {
+    padding: 16px 8px; /* Less padding inside cards */
+  }
+  
+  .radioImage {
+    width: 60px;
+    height: 60px;
+  }
+}

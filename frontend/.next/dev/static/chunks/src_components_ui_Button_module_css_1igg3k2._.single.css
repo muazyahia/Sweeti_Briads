@@ -1,0 +1,56 @@
+/* [project]/src/components/ui/Button.module.css [app-client] (css) */
+.Button-module__8RiFmG__btn {
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  cursor: pointer;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .25s ease-in-out;
+  display: inline-flex;
+  position: relative;
+}
+
+.Button-module__8RiFmG__btn:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 3px;
+}
+
+.Button-module__8RiFmG__btn:active {
+  transform: translateY(0)scale(.98);
+}
+
+.Button-module__8RiFmG__primary {
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-alt) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px var(--shadow-soft), 0 1px 3px #0000000d;
+}
+
+.Button-module__8RiFmG__primary:hover {
+  box-shadow: 0 8px 24px var(--shadow-hover), 0 2px 6px #00000014;
+  transform: translateY(-2px)scale(1.02);
+}
+
+.Button-module__8RiFmG__outline {
+  color: var(--brand-primary);
+  border: 1.5px solid var(--brand-primary);
+  background: none;
+}
+
+.Button-module__8RiFmG__outline:hover {
+  background: #e91e630f;
+  transform: translateY(-1px)scale(1.02);
+}
+
+.Button-module__8RiFmG__icon {
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_ui_Button_module_css_1igg3k2._.single.css.map*/

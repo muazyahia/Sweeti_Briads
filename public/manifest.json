@@ -1,0 +1,15 @@
+{
+  "short_name": "Sweeti Braids",
+  "name": "Sweeti Braids | Luxury Hair Braiding",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#e91e63",
+  "background_color": "#ffffff"
+}
