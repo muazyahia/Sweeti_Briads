@@ -1,55 +1,147 @@
-# Sweeti Braids - Client Website 🌸✨
+# Sweeti Braids - Client Website
 
-Welcome to the frontend repository for the **Sweeti Braids** platform! This is a modern, responsive, and beautifully designed web application built to provide a premium booking and browsing experience for a hair braiding salon.
+Frontend for **Sweeti Braids**, a modern and responsive hair braiding salon platform designed to provide clients with a smooth browsing experience and an easy appointment booking process.
 
-## 🌟 Key Features
-- **Modern & Responsive Design:** Glass-morphism UI elements, smooth scroll animations, and curated vibrant color palettes.
-- **Dynamic Service Browsing:** Users can explore signature styles dynamically fetched from the API.
-- **Interactive Image Gallery:** A high-quality photo gallery for past work, fully integrated with Cloudinary via the backend.
-- **Seamless Booking System:** Clients can effortlessly request appointments directly from the website.
-- **Client Reviews Integration:** Displays real verified client testimonials.
+## Live Demo
 
-## 🛠️ Technology Stack
-- **Framework:** Next.js (React)
-- **Styling:** Vanilla CSS Modules (for highly customized and isolated styling)
-- **Icons:** Lucide React
-- **API Integration:** Custom fetch hooks connected to the Sweeti Braids NestJS Backend.
+**Frontend:** https://sweeti-briads.vercel.app/
 
-## 💻 Running Locally
+**Backend API:** https://sweeti-briads-backend.vercel.app/
 
-### Prerequisites
-- Node.js (v18+ recommended)
-- A running instance of the Sweeti Braids Backend API.
+**Frontend Repository:** https://github.com/muazyahia/Sweeti_Briads
 
-### Installation
+**Backend Repository:** https://github.com/muazyahia/SweetiBriads_BackEnd
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/muazyahia/Sweeti_Briads.git
-   cd Sweeti_Briads
-   ```
+---
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Technologies
 
-3. **Environment Setup:**
-   Create a `.env.local` file in the root directory and specify your backend API URL:
-   ```env
-   NEXT_PUBLIC_API_URL=https://your-backend-api-url.com
-   # Or for local development:
-   # NEXT_PUBLIC_API_URL=http://localhost:4000
-   ```
+| Technology   | Description                                  |
+| ------------ | -------------------------------------------- |
+| Next.js      | React framework for building the application |
+| React        | Component-based UI development               |
+| CSS Modules  | Scoped and customized component styling      |
+| Lucide React | UI icons                                     |
+| REST API     | Communication with the backend               |
+| Cloudinary   | Image hosting and media management           |
+| Vercel       | Deployment and hosting                       |
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+---
 
-## ☁️ Deployment (Vercel)
-This project is fully ready for one-click deployment on **Vercel**.
-1. Import this repository in your Vercel Dashboard.
-2. In the Vercel project settings, go to **Environment Variables** and add `NEXT_PUBLIC_API_URL` pointing to your deployed backend.
-3. Deploy! Vercel will automatically configure the build settings for Next.js.
+## Features
+
+* Responsive and modern user interface
+* Dynamic hairstyle and service browsing
+* Interactive image gallery
+* Cloudinary-powered image management
+* Online appointment booking
+* Client reviews and testimonials
+* Smooth scrolling and UI animations
+* Glassmorphism-based interface elements
+* REST API integration with the backend
+
+---
+
+## Project Structure
+
+```text
+src/
+├── app/
+├── components/
+├── hooks/
+├── services/
+├── styles/
+└── config/
+```
+
+---
+
+## Installation
+
+### Requirements
+
+* Node.js v18 or later
+* Sweeti Braids Backend API
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/muazyahia/Sweeti_Briads.git
+cd Sweeti_Briads
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the project root.
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:4000
+```
+
+For the deployed backend:
+
+```env
+NEXT_PUBLIC_API_URL=https://sweeti-briads-backend.vercel.app
+```
+
+### Run the Application
+
+```bash
+npm run dev
+```
+
+The application will run on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Deployment
+
+The project is ready for deployment on **Vercel**.
+
+Add the following environment variable in your Vercel project settings:
+
+```env
+NEXT_PUBLIC_API_URL=https://sweeti-briads-backend.vercel.app
+```
+
+After configuring the environment variable, deploy the project through Vercel.
+
+---
+
+## Backend
+
+The frontend communicates with the **Sweeti Braids Backend API**, built with NestJS and responsible for managing services, gallery content, bookings, reviews, and other application data.
+
+**Backend API:** https://sweeti-briads-backend.vercel.app/
+
+**Backend Repository:** https://github.com/muazyahia/SweetiBriads_BackEnd
+
+---
+
+## Architecture
+
+* Component-Based Architecture
+* Next.js Application Architecture
+* REST API Integration
+* Reusable UI Components
+* Responsive Design
+* Scoped CSS Modules
+* Cloudinary Media Integration
+* Production Deployment with Vercel
+
+---
+
+## License
+
+This project is developed for the Sweeti Braids platform.
+Developed by Moa'az Yahia
