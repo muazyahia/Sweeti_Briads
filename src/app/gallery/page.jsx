@@ -92,7 +92,7 @@ export default function GalleryPage() {
       <main className={`container ${styles.mainContent}`}>
         <div className={styles.header}>
           <h1 className={styles.title}>{t('nav-gallery')}</h1>
-          <p className={styles.subtitle}>Explore our full portfolio of handcrafted braids</p>
+          <p className={styles.subtitle}>{t('gallery-subtitle')}</p>
           
           <div className={styles.filters}>
             {filters.map(f => (
@@ -118,7 +118,7 @@ export default function GalleryPage() {
                     {img.price && <span style={{ fontSize: '14px', opacity: 0.9 }}>{img.price}</span>}
                   </div>
                 ) : (
-                  <span>View</span>
+                  <span>{t('gallery-view')}</span>
                 )}
               </div>
             </div>

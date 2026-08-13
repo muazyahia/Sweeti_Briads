@@ -108,8 +108,46 @@ const translations = {
     "reviews-title": "Loved by our Clients",
     "reviews-desc": "We value your opinion and check every feedback to offer the absolute best experience in Zagazig.",
     "contact-title": "Get in Touch",
+    "footer-visit": "Visit Us",
+    "footer-location": "Location",
+    "footer-address": "Zagazig, Sharqia Governorate, Egypt",
+    "footer-call": "Call / WhatsApp",
+    "footer-hours": "Working Hours",
+    "footer-time": "Daily: 11:00 AM - 09:00 PM",
+    "footer-studio": "Sweeti Braids Studio",
+    "footer-city": "Zagazig, Egypt",
+    "footer-open-maps": "Open Google Maps",
     "footer-slogan": "Hand drawn with love. Beauty in every braid.",
-    "foot-credit": "Designed in Zagazig, Egypt."
+    "foot-credit": "Designed in Zagazig, Egypt.",
+    "footer-rights": "Sweeti Braids. All Rights Reserved.",
+
+    // Booking Options & Addons
+    "booking-hair-length": "Hair Length",
+    "booking-length-medium": "Medium Length",
+    "booking-length-long": "Long Length",
+    "booking-length-short": "Short Length",
+    "booking-addons-label": "Add-ons",
+    "booking-addon-curly": "Curly Ends",
+    "booking-addon-gold": "Gold Rings/Beads",
+    "booking-addon-extra": "Extra Extensions",
+    "booking-name": "Name",
+    "booking-phone-label": "WhatsApp Number",
+    "booking-date-label": "Date",
+    "booking-time-label": "Time",
+    "booking-select-time": "Select Time",
+    "booking-summary": "Booking Summary",
+    "booking-sum-style": "Style:",
+    "booking-sum-length": "Length:",
+    "booking-sum-addons": "Add-ons:",
+    "booking-sum-name": "Name:",
+    "booking-sum-schedule": "Schedule:",
+    "booking-none": "None",
+    
+    // Gallery & Before/After
+    "gallery-subtitle": "Explore our full portfolio of handcrafted braids",
+    "gallery-view": "View",
+    "before-label": "Before",
+    "after-label": "After"
   },
   ar: {
     // Navigation
@@ -212,8 +250,46 @@ const translations = {
     "reviews-title": "آراء عميلاتنا اللواتي أحببن خدماتنا",
     "reviews-desc": "نهتم برأيكِ بشدة، ونتابع كل تقييم لنقدم دائماً أفضل تجربة ضفائر فريدة في مدينة الزقازيق.",
     "contact-title": "معلومات التواصل",
+    "footer-visit": "قم بزيارتنا",
+    "footer-location": "العنوان",
+    "footer-address": "الزقازيق، محافظة الشرقية، مصر",
+    "footer-call": "اتصل / واتساب",
+    "footer-hours": "ساعات العمل",
+    "footer-time": "يومياً: 11:00 صباحاً - 09:00 مساءً",
+    "footer-studio": "ستوديو سويتي للضفائر",
+    "footer-city": "الزقازيق، مصر",
+    "footer-open-maps": "افتح خرائط جوجل",
     "footer-slogan": "صنعت يدوياً بكل الحب. الجمال في كل خصلة شعر.",
-    "foot-credit": "صمم بكل حب في الزقازيق، مصر."
+    "foot-credit": "صمم بكل حب في الزقازيق، مصر.",
+    "footer-rights": "Sweeti Braids. جميع الحقوق محفوظة.",
+
+    // Booking Options & Addons
+    "booking-hair-length": "طول الشعر",
+    "booking-length-medium": "طول متوسط",
+    "booking-length-long": "طويل",
+    "booking-length-short": "قصير",
+    "booking-addons-label": "الإضافات",
+    "booking-addon-curly": "أطراف كيرلي",
+    "booking-addon-gold": "حلقات ذهبية/خرز",
+    "booking-addon-extra": "إكستنشن إضافي",
+    "booking-name": "الاسم",
+    "booking-phone-label": "رقم الواتساب",
+    "booking-date-label": "التاريخ",
+    "booking-time-label": "الوقت",
+    "booking-select-time": "اختر الوقت",
+    "booking-summary": "ملخص الحجز",
+    "booking-sum-style": "التسريحة:",
+    "booking-sum-length": "الطول:",
+    "booking-sum-addons": "الإضافات:",
+    "booking-sum-name": "الاسم:",
+    "booking-sum-schedule": "الموعد:",
+    "booking-none": "لا يوجد",
+    
+    // Gallery & Before/After
+    "gallery-subtitle": "اكتشفي تشكيلتنا الكاملة من الضفائر المصنوعة يدوياً",
+    "gallery-view": "عرض",
+    "before-label": "قبل",
+    "after-label": "بعد"
   }
 };
 

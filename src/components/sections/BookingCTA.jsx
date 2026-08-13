@@ -191,21 +191,25 @@ const BookingCTA = () => {
                   <div className={styles.stepContent}>
                     <h3>{t('step-2-label')}</h3>
                     <div className={styles.inputGroup}>
-                      <label htmlFor="hairLength">Hair Length</label>
+                      <label htmlFor="hairLength">{t('booking-hair-length')}</label>
                       <select id="hairLength" name="length" value={formData.length} onChange={handleInputChange} className={styles.input}>
-                        <option>Medium Length</option>
-                        <option>Long Length</option>
-                        <option>Short Length</option>
+                        <option value="Medium Length">{t('booking-length-medium')}</option>
+                        <option value="Long Length">{t('booking-length-long')}</option>
+                        <option value="Short Length">{t('booking-length-short')}</option>
                       </select>
                     </div>
                     
                     <div className={styles.inputGroup}>
-                      <label>Add-ons</label>
+                      <label>{t('booking-addons-label')}</label>
                       <div className={styles.checkboxGroup}>
-                        {['Curly Ends', 'Gold Rings/Beads', 'Extra Extensions'].map(addon => (
-                          <label key={addon} className={styles.checkboxLabel}>
-                            <input type="checkbox" name="addons" value={addon} checked={formData.addons.includes(addon)} onChange={handleInputChange} />
-                            {addon}
+                        {[
+                          { id: 'Curly Ends', label: t('booking-addon-curly') },
+                          { id: 'Gold Rings/Beads', label: t('booking-addon-gold') },
+                          { id: 'Extra Extensions', label: t('booking-addon-extra') }
+                        ].map(addon => (
+                          <label key={addon.id} className={styles.checkboxLabel}>
+                            <input type="checkbox" name="addons" value={addon.id} checked={formData.addons.includes(addon.id)} onChange={handleInputChange} />
+                            {addon.label}
                           </label>
                         ))}
                       </div>
@@ -222,28 +226,28 @@ const BookingCTA = () => {
                   <div className={styles.stepContent}>
                     <h3>{t('step-3-label')}</h3>
                     <div className={styles.inputGroup}>
-                      <label htmlFor="clientName">Name</label>
+                      <label htmlFor="clientName">{t('booking-name')}</label>
                       <input id="clientName" type="text" name="name" value={formData.name} onChange={handleInputChange} className={`${styles.input} ${errors.name ? styles.inputError : ''}`} />
                       {errors.name && <span className={styles.errorText}>{errors.name}</span>}
                     </div>
                     
                     <div className={styles.inputGroup}>
-                      <label htmlFor="clientPhone">WhatsApp Number</label>
+                      <label htmlFor="clientPhone">{t('booking-phone-label')}</label>
                       <input id="clientPhone" type="tel" name="phone" value={formData.phone} onChange={handleInputChange} className={`${styles.input} ${errors.phone ? styles.inputError : ''}`} placeholder="010XXXXXXXX" />
                       {errors.phone && <span className={styles.errorText}>{errors.phone}</span>}
                     </div>
 
                     <div style={{display: 'flex', gap: '16px'}}>
                       <div className={styles.inputGroup} style={{flex: 1}}>
-                        <label htmlFor="booking-date">Date</label>
+                        <label htmlFor="booking-date">{t('booking-date-label')}</label>
                         <input type="date" id="booking-date" name="date" value={formData.date} onChange={handleInputChange} className={`${styles.input} ${errors.date ? styles.inputError : ''}`} />
                         {errors.date && <span className={styles.errorText}>{errors.date}</span>}
                       </div>
                       
                       <div className={styles.inputGroup} style={{flex: 1}}>
-                        <label htmlFor="bookingTime">Time</label>
+                        <label htmlFor="bookingTime">{t('booking-time-label')}</label>
                         <select id="bookingTime" name="time" value={formData.time} onChange={handleInputChange} className={`${styles.input} ${errors.time ? styles.inputError : ''}`}>
-                          <option value="">Select Time</option>
+                          <option value="">{t('booking-select-time')}</option>
                           <option>10:00 AM</option>
                           <option>01:00 PM</option>
                           <option>04:00 PM</option>
@@ -264,13 +268,13 @@ const BookingCTA = () => {
             </div>
 
             <div className={styles.summaryCard}>
-              <h3 style={{marginBottom: '8px', fontSize: '20px'}}>Booking Summary</h3>
+              <h3 style={{marginBottom: '8px', fontSize: '20px'}}>{t('booking-summary')}</h3>
               <div className={styles.summaryContent}>
-                <div className={styles.summaryItem}><span>Style:</span> <span>{formData.style}</span></div>
-                <div className={styles.summaryItem}><span>Length:</span> <span>{formData.length}</span></div>
-                <div className={styles.summaryItem}><span>Add-ons:</span> <span>{formData.addons.length ? formData.addons.join(', ') : 'None'}</span></div>
-                <div className={styles.summaryItem}><span>Name:</span> <span>{formData.name || '-'}</span></div>
-                <div className={styles.summaryItem}><span>Schedule:</span> <span>{formData.date ? `${formData.date} @ ${formData.time || ''}` : '-'}</span></div>
+                <div className={styles.summaryItem}><span>{t('booking-sum-style')}</span> <span>{formData.style === 'Knotless' ? t('style-knotless-tab') : formData.style === 'Cornrows' ? t('style-cornrows-tab') : formData.style === 'French Braids' ? t('style-french-tab') : t('style-boho-tab')}</span></div>
+                <div className={styles.summaryItem}><span>{t('booking-sum-length')}</span> <span>{formData.length === 'Medium Length' ? t('booking-length-medium') : formData.length === 'Long Length' ? t('booking-length-long') : t('booking-length-short')}</span></div>
+                <div className={styles.summaryItem}><span>{t('booking-sum-addons')}</span> <span>{formData.addons.length ? formData.addons.map(a => a === 'Curly Ends' ? t('booking-addon-curly') : a === 'Gold Rings/Beads' ? t('booking-addon-gold') : t('booking-addon-extra')).join(', ') : t('booking-none')}</span></div>
+                <div className={styles.summaryItem}><span>{t('booking-sum-name')}</span> <span>{formData.name || '-'}</span></div>
+                <div className={styles.summaryItem}><span>{t('booking-sum-schedule')}</span> <span>{formData.date ? `${formData.date} @ ${formData.time || ''}` : '-'}</span></div>
               </div>
             </div>
 

@@ -14,22 +14,22 @@ const Footer = () => {
         <div className="container">
           <div className={styles.contactCard}>
             <div className={styles.infoPanel}>
-              <span className={styles.subtitle}>Visit Us</span>
+              <span className={styles.subtitle}>{t('footer-visit')}</span>
               <h2 className={styles.title}>{t('contact-title')}</h2>
               
               <div className={styles.detailsList}>
                 <div className={styles.contactItem}>
                   <MapPin className={styles.icon} />
                   <div>
-                    <h4>Location</h4>
-                    <p>Zagazig, Sharqia Governorate, Egypt</p>
+                    <h4>{t('footer-location')}</h4>
+                    <p>{t('footer-address')}</p>
                   </div>
                 </div>
                 
                 <div className={styles.contactItem}>
                   <Phone className={styles.icon} />
                   <div>
-                    <h4>Call / WhatsApp</h4>
+                    <h4>{t('footer-call')}</h4>
                     <a href="tel:01091945495" className={styles.link}>01091945495</a>
                   </div>
                 </div>
@@ -37,8 +37,8 @@ const Footer = () => {
                 <div className={styles.contactItem}>
                   <Mail className={styles.icon} />
                   <div>
-                    <h4>Working Hours</h4>
-                    <p>Daily: 11:00 AM - 09:00 PM</p>
+                    <h4>{t('footer-hours')}</h4>
+                    <p>{t('footer-time')}</p>
                   </div>
                 </div>
               </div>
@@ -57,10 +57,10 @@ const Footer = () => {
             <div className={styles.mapPanel}>
               <div className={styles.mapCardGlow}>
                 <MapPin className={styles.mapPin} />
-                <h3>Sweeti Braids Studio</h3>
-                <p>Zagazig, Egypt</p>
+                <h3>{t('footer-studio')}</h3>
+                <p>{t('footer-city')}</p>
                 <a href="https://maps.google.com/?q=Zagazig,+Egypt" target="_blank" rel="noreferrer" className={styles.mapBtn}>
-                  Open Google Maps
+                  {t('footer-open-maps')}
                 </a>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
           <div className={styles.divider}></div>
           <div className={styles.footerBottom}>
-            <p>&copy; {new Date().getFullYear()} Sweeti Braids. All Rights Reserved. <span>{t('foot-credit')}</span></p>
+            <p>&copy; {new Date().getFullYear()} {t('footer-rights')} <span>{t('foot-credit')}</span></p>
           </div>
         </div>
       </footer>

@@ -197,7 +197,7 @@ var Footer = function Footer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subtitle,
-                                        children: "Visit Us"
+                                        children: t('footer-visit')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layout/Footer.jsx",
                                         lineNumber: 17,
@@ -227,14 +227,14 @@ var Footer = function Footer() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                children: "Location"
+                                                                children: t('footer-location')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/layout/Footer.jsx",
                                                                 lineNumber: 24,
                                                                 columnNumber: 21
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "Zagazig, Sharqia Governorate, Egypt"
+                                                                children: t('footer-address')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/layout/Footer.jsx",
                                                                 lineNumber: 25,
@@ -265,7 +265,7 @@ var Footer = function Footer() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                children: "Call / WhatsApp"
+                                                                children: t('footer-call')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/layout/Footer.jsx",
                                                                 lineNumber: 32,
@@ -305,14 +305,14 @@ var Footer = function Footer() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                children: "Working Hours"
+                                                                children: t('footer-hours')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/layout/Footer.jsx",
                                                                 lineNumber: 40,
                                                                 columnNumber: 21
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                children: "Daily: 11:00 AM - 09:00 PM"
+                                                                children: t('footer-time')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/layout/Footer.jsx",
                                                                 lineNumber: 41,
@@ -463,14 +463,14 @@ var Footer = function Footer() {
                                             columnNumber: 17
                                         }, _this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            children: "Sweeti Braids Studio"
+                                            children: t('footer-studio')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/layout/Footer.jsx",
                                             lineNumber: 60,
                                             columnNumber: 17
                                         }, _this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            children: "Zagazig, Egypt"
+                                            children: t('footer-city')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/layout/Footer.jsx",
                                             lineNumber: 61,
@@ -481,7 +481,7 @@ var Footer = function Footer() {
                                             target: "_blank",
                                             rel: "noreferrer",
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mapBtn,
-                                            children: "Open Google Maps"
+                                            children: t('footer-open-maps')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/layout/Footer.jsx",
                                             lineNumber: 62,
@@ -574,13 +574,15 @@ var Footer = function Footer() {
                                 children: [
                                     "© ",
                                     new Date().getFullYear(),
-                                    " Sweeti Braids. All Rights Reserved. ",
+                                    " ",
+                                    t('footer-rights'),
+                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: t('foot-credit')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layout/Footer.jsx",
                                         lineNumber: 82,
-                                        columnNumber: 86
+                                        columnNumber: 71
                                     }, _this)
                                 ]
                             }, void 0, true, {
@@ -1256,13 +1258,13 @@ var BeforeAfter = function BeforeAfter() {
                                         data = _state.sent();
                                         if (data && data.length > 0) {
                                             setPairs(data.map({
-                                                "BeforeAfter.useEffect.fetchTransformations": function(t) {
+                                                "BeforeAfter.useEffect.fetchTransformations": function(t1) {
                                                     return {
-                                                        id: t._id,
-                                                        before: t.beforeImageUrl,
-                                                        after: t.afterImageUrl,
-                                                        beforeLabel: t.beforeLabel || 'Before',
-                                                        afterLabel: t.afterLabel || 'After'
+                                                        id: t1._id,
+                                                        before: t1.beforeImageUrl,
+                                                        after: t1.afterImageUrl,
+                                                        beforeLabel: t1.beforeLabel || 'Before',
+                                                        afterLabel: t1.afterLabel || 'After'
                                                     };
                                                 }
                                             }["BeforeAfter.useEffect.fetchTransformations"]));
@@ -1391,7 +1393,7 @@ var BeforeAfter = function BeforeAfter() {
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BeforeAfter$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
-                                                children: "Before"
+                                                children: t('before-label')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/BeforeAfter.jsx",
                                                 lineNumber: 65,
@@ -1438,7 +1440,7 @@ var BeforeAfter = function BeforeAfter() {
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BeforeAfter$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
-                                                children: "After"
+                                                children: t('after-label')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/BeforeAfter.jsx",
                                                 lineNumber: 72,
@@ -1916,7 +1918,7 @@ var BookingCTA = function BookingCTA() {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                 htmlFor: "hairLength",
-                                                                children: "Hair Length"
+                                                                children: t('booking-hair-length')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
                                                                 lineNumber: 194,
@@ -1930,21 +1932,24 @@ var BookingCTA = function BookingCTA() {
                                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input,
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                        children: "Medium Length"
+                                                                        value: "Medium Length",
+                                                                        children: t('booking-length-medium')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
                                                                         lineNumber: 196,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                        children: "Long Length"
+                                                                        value: "Long Length",
+                                                                        children: t('booking-length-long')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
                                                                         lineNumber: 197,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                        children: "Short Length"
+                                                                        value: "Short Length",
+                                                                        children: t('booking-length-short')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
                                                                         lineNumber: 198,
@@ -1966,7 +1971,7 @@ var BookingCTA = function BookingCTA() {
                                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputGroup,
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                children: "Add-ons"
+                                                                children: t('booking-addons-label')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
                                                                 lineNumber: 203,
@@ -1975,9 +1980,18 @@ var BookingCTA = function BookingCTA() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].checkboxGroup,
                                                                 children: [
-                                                                    'Curly Ends',
-                                                                    'Gold Rings/Beads',
-                                                                    'Extra Extensions'
+                                                                    {
+                                                                        id: 'Curly Ends',
+                                                                        label: t('booking-addon-curly')
+                                                                    },
+                                                                    {
+                                                                        id: 'Gold Rings/Beads',
+                                                                        label: t('booking-addon-gold')
+                                                                    },
+                                                                    {
+                                                                        id: 'Extra Extensions',
+                                                                        label: t('booking-addon-extra')
+                                                                    }
                                                                 ].map(function(addon) {
                                                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].checkboxLabel,
@@ -1985,19 +1999,19 @@ var BookingCTA = function BookingCTA() {
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                                                 type: "checkbox",
                                                                                 name: "addons",
-                                                                                value: addon,
-                                                                                checked: formData.addons.includes(addon),
+                                                                                value: addon.id,
+                                                                                checked: formData.addons.includes(addon.id),
                                                                                 onChange: handleInputChange
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 207,
+                                                                                lineNumber: 211,
                                                                                 columnNumber: 29
                                                                             }, _this),
-                                                                            addon
+                                                                            addon.label
                                                                         ]
-                                                                    }, addon, true, {
+                                                                    }, addon.id, true, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 206,
+                                                                        lineNumber: 210,
                                                                         columnNumber: 27
                                                                     }, _this);
                                                                 })
@@ -2022,7 +2036,7 @@ var BookingCTA = function BookingCTA() {
                                                                 children: t('prev-btn')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 215,
+                                                                lineNumber: 219,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2032,13 +2046,13 @@ var BookingCTA = function BookingCTA() {
                                                                 children: t('next-btn')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 216,
+                                                                lineNumber: 220,
                                                                 columnNumber: 23
                                                             }, _this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 214,
+                                                        lineNumber: 218,
                                                         columnNumber: 21
                                                     }, _this)
                                                 ]
@@ -2054,7 +2068,7 @@ var BookingCTA = function BookingCTA() {
                                                         children: t('step-3-label')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 227,
                                                         columnNumber: 21
                                                     }, _this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2062,10 +2076,10 @@ var BookingCTA = function BookingCTA() {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                 htmlFor: "clientName",
-                                                                children: "Name"
+                                                                children: t('booking-name')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 225,
+                                                                lineNumber: 229,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2077,7 +2091,7 @@ var BookingCTA = function BookingCTA() {
                                                                 className: "".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input, " ").concat(errors.name ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : '')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 226,
+                                                                lineNumber: 230,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             errors.name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2085,13 +2099,13 @@ var BookingCTA = function BookingCTA() {
                                                                 children: errors.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 227,
+                                                                lineNumber: 231,
                                                                 columnNumber: 39
                                                             }, _this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 224,
+                                                        lineNumber: 228,
                                                         columnNumber: 21
                                                     }, _this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2099,10 +2113,10 @@ var BookingCTA = function BookingCTA() {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                 htmlFor: "clientPhone",
-                                                                children: "WhatsApp Number"
+                                                                children: t('booking-phone-label')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 231,
+                                                                lineNumber: 235,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2115,7 +2129,7 @@ var BookingCTA = function BookingCTA() {
                                                                 placeholder: "010XXXXXXXX"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 232,
+                                                                lineNumber: 236,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             errors.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2123,13 +2137,13 @@ var BookingCTA = function BookingCTA() {
                                                                 children: errors.phone
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 233,
+                                                                lineNumber: 237,
                                                                 columnNumber: 40
                                                             }, _this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 234,
                                                         columnNumber: 21
                                                     }, _this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2146,10 +2160,10 @@ var BookingCTA = function BookingCTA() {
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                         htmlFor: "booking-date",
-                                                                        children: "Date"
+                                                                        children: t('booking-date-label')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 238,
+                                                                        lineNumber: 242,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2161,7 +2175,7 @@ var BookingCTA = function BookingCTA() {
                                                                         className: "".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input, " ").concat(errors.date ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : '')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 239,
+                                                                        lineNumber: 243,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     errors.date && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2169,13 +2183,13 @@ var BookingCTA = function BookingCTA() {
                                                                         children: errors.date
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 240,
+                                                                        lineNumber: 244,
                                                                         columnNumber: 41
                                                                     }, _this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 237,
+                                                                lineNumber: 241,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2186,10 +2200,10 @@ var BookingCTA = function BookingCTA() {
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                         htmlFor: "bookingTime",
-                                                                        children: "Time"
+                                                                        children: t('booking-time-label')
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 244,
+                                                                        lineNumber: 248,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -2201,44 +2215,44 @@ var BookingCTA = function BookingCTA() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                 value: "",
-                                                                                children: "Select Time"
+                                                                                children: t('booking-select-time')
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 246,
+                                                                                lineNumber: 250,
                                                                                 columnNumber: 27
                                                                             }, _this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                 children: "10:00 AM"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 247,
+                                                                                lineNumber: 251,
                                                                                 columnNumber: 27
                                                                             }, _this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                 children: "01:00 PM"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 248,
+                                                                                lineNumber: 252,
                                                                                 columnNumber: 27
                                                                             }, _this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                 children: "04:00 PM"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 249,
+                                                                                lineNumber: 253,
                                                                                 columnNumber: 27
                                                                             }, _this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                 children: "07:00 PM"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                                lineNumber: 250,
+                                                                                lineNumber: 254,
                                                                                 columnNumber: 27
                                                                             }, _this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 245,
+                                                                        lineNumber: 249,
                                                                         columnNumber: 25
                                                                     }, _this),
                                                                     errors.time && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2246,19 +2260,19 @@ var BookingCTA = function BookingCTA() {
                                                                         children: errors.time
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                        lineNumber: 252,
+                                                                        lineNumber: 256,
                                                                         columnNumber: 41
                                                                     }, _this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 243,
+                                                                lineNumber: 247,
                                                                 columnNumber: 23
                                                             }, _this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 236,
+                                                        lineNumber: 240,
                                                         columnNumber: 21
                                                     }, _this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2271,7 +2285,7 @@ var BookingCTA = function BookingCTA() {
                                                                 children: t('prev-btn')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 257,
+                                                                lineNumber: 261,
                                                                 columnNumber: 23
                                                             }, _this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2280,19 +2294,19 @@ var BookingCTA = function BookingCTA() {
                                                                 children: t('confirm-btn')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                                lineNumber: 258,
+                                                                lineNumber: 262,
                                                                 columnNumber: 23
                                                             }, _this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 256,
+                                                        lineNumber: 260,
                                                         columnNumber: 21
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 222,
+                                                lineNumber: 226,
                                                 columnNumber: 19
                                             }, _this)
                                         ]
@@ -2315,10 +2329,10 @@ var BookingCTA = function BookingCTA() {
                                             marginBottom: '8px',
                                             fontSize: '20px'
                                         },
-                                        children: "Booking Summary"
+                                        children: t('booking-summary')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                        lineNumber: 267,
+                                        lineNumber: 271,
                                         columnNumber: 15
                                     }, _this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2328,82 +2342,84 @@ var BookingCTA = function BookingCTA() {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].summaryItem,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "Style:"
+                                                        children: t('booking-sum-style')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 269,
+                                                        lineNumber: 273,
                                                         columnNumber: 53
                                                     }, _this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: formData.style
+                                                        children: formData.style === 'Knotless' ? t('style-knotless-tab') : formData.style === 'Cornrows' ? t('style-cornrows-tab') : formData.style === 'French Braids' ? t('style-french-tab') : t('style-boho-tab')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 269,
-                                                        columnNumber: 73
+                                                        lineNumber: 273,
+                                                        columnNumber: 91
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 269,
+                                                lineNumber: 273,
                                                 columnNumber: 17
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].summaryItem,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "Length:"
+                                                        children: t('booking-sum-length')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 270,
+                                                        lineNumber: 274,
                                                         columnNumber: 53
                                                     }, _this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: formData.length
+                                                        children: formData.length === 'Medium Length' ? t('booking-length-medium') : formData.length === 'Long Length' ? t('booking-length-long') : t('booking-length-short')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 270,
-                                                        columnNumber: 74
+                                                        lineNumber: 274,
+                                                        columnNumber: 92
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 270,
+                                                lineNumber: 274,
                                                 columnNumber: 17
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].summaryItem,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "Add-ons:"
+                                                        children: t('booking-sum-addons')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 271,
+                                                        lineNumber: 275,
                                                         columnNumber: 53
                                                     }, _this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: formData.addons.length ? formData.addons.join(', ') : 'None'
+                                                        children: formData.addons.length ? formData.addons.map(function(a) {
+                                                            return a === 'Curly Ends' ? t('booking-addon-curly') : a === 'Gold Rings/Beads' ? t('booking-addon-gold') : t('booking-addon-extra');
+                                                        }).join(', ') : t('booking-none')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 271,
-                                                        columnNumber: 75
+                                                        lineNumber: 275,
+                                                        columnNumber: 92
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 271,
+                                                lineNumber: 275,
                                                 columnNumber: 17
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].summaryItem,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "Name:"
+                                                        children: t('booking-sum-name')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 272,
+                                                        lineNumber: 276,
                                                         columnNumber: 53
                                                     }, _this),
                                                     " ",
@@ -2411,23 +2427,23 @@ var BookingCTA = function BookingCTA() {
                                                         children: formData.name || '-'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 272,
-                                                        columnNumber: 72
+                                                        lineNumber: 276,
+                                                        columnNumber: 90
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 272,
+                                                lineNumber: 276,
                                                 columnNumber: 17
                                             }, _this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$BookingCTA$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].summaryItem,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: "Schedule:"
+                                                        children: t('booking-sum-schedule')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 277,
                                                         columnNumber: 53
                                                     }, _this),
                                                     " ",
@@ -2435,25 +2451,25 @@ var BookingCTA = function BookingCTA() {
                                                         children: formData.date ? "".concat(formData.date, " @ ").concat(formData.time || '') : '-'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                        lineNumber: 273,
-                                                        columnNumber: 76
+                                                        lineNumber: 277,
+                                                        columnNumber: 94
                                                     }, _this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                                lineNumber: 273,
+                                                lineNumber: 277,
                                                 columnNumber: 17
                                             }, _this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                        lineNumber: 268,
+                                        lineNumber: 272,
                                         columnNumber: 15
                                     }, _this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/BookingCTA.jsx",
-                                lineNumber: 266,
+                                lineNumber: 270,
                                 columnNumber: 13
                             }, _this)
                         ]

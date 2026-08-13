@@ -62,14 +62,14 @@ const BeforeAfter = () => {
               <div key={pair.id} className={styles.pair}>
                 <div className={styles.imageContainer}>
                   <img src={pair.before} alt="Before" className={styles.image} />
-                  <span className={styles.label}>Before</span>
+                  <span className={styles.label}>{t('before-label')}</span>
                 </div>
                 <div className={styles.iconContainer}>
                   <div className={styles.sliderIcon}><ArrowRight size={14} /></div>
                 </div>
                 <div className={styles.imageContainer}>
                   <img src={pair.after} alt="After" className={styles.image} />
-                  <span className={styles.label}>After</span>
+                  <span className={styles.label}>{t('after-label')}</span>
                 </div>
               </div>
             ))}
