@@ -48,7 +48,8 @@ const GalleryGrid = () => {
     <section className="section" id="gallery">
       <div className="container">
         <div ref={headerRef} className={`${styles.header} reveal-fade-up`}>
-          <h2 className={styles.title}>Our Work Gallery</h2>
+          <h2 className={styles.title}>{t('gallery-title')}</h2>
+          <p className={styles.desc}>{t('gallery-subtitle')}</p>
           <div className={styles.filters}>
             {filters.map(f => (
               <button 
@@ -56,7 +57,7 @@ const GalleryGrid = () => {
                 className={`${styles.filterPill} ${filter === f ? styles.active : ''}`}
                 onClick={() => setFilter(f)}
               >
-                {f}
+                {f === 'All' ? t('gallery-all') : f}
               </button>
             ))}
           </div>
@@ -72,7 +73,7 @@ const GalleryGrid = () => {
 
         <div className={styles.viewMore}>
           <Link href="/gallery" passHref>
-            <Button variant="outline">View Full Gallery</Button>
+            <Button variant="outline">{t('gallery-view-full')}</Button>
           </Link>
         </div>
       </div>

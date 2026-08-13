@@ -15,7 +15,7 @@ const SignatureStyles = () => {
   const headerRef = useScrollReveal();
   const [activeTab, setActiveTab] = useState(0);
   const [lightboxData, setLightboxData] = useState({ isOpen: false, src: '' });
-  const { t, language } = useLanguage();
+  const { t, lang } = useLanguage();
   const [apiStyles, setApiStyles] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -92,7 +92,7 @@ const SignatureStyles = () => {
               className={`${styles.tabBtn} ${activeTab === index ? styles.activeTab : ''}`}
               onClick={() => setActiveTab(index)}
             >
-              {style.name}
+              {lang === 'ar' && style.nameAr ? style.nameAr : style.name}
             </button>
           ))}
         </div>
@@ -113,17 +113,17 @@ const SignatureStyles = () => {
           </div>
 
           <div key={`${activeContent._id}-info`} className={styles.info}>
-            <span className={styles.category}>{activeContent.tagline}</span>
-            <h3 className={styles.styleTitle}>{activeContent.name}</h3>
-            <p className={styles.textDesc}>{activeContent.description}</p>
+            <span className={styles.category}>{lang === 'ar' && activeContent.taglineAr ? activeContent.taglineAr : activeContent.tagline}</span>
+            <h3 className={styles.styleTitle}>{lang === 'ar' && activeContent.nameAr ? activeContent.nameAr : activeContent.name}</h3>
+            <p className={styles.textDesc}>{lang === 'ar' && activeContent.descriptionAr ? activeContent.descriptionAr : activeContent.description}</p>
             
             <div className={styles.features}>
               {activeContent.features?.map((feat, i) => (
                 <div key={i} className={styles.featureBullet}>
                   <span className={styles.bulletIcon}>•</span>
                   <div>
-                    <h4>{feat.title}</h4>
-                    <p>{feat.desc}</p>
+                    <h4>{lang === 'ar' && feat.titleAr ? feat.titleAr : feat.title}</h4>
+                    <p>{lang === 'ar' && feat.descAr ? feat.descAr : feat.desc}</p>
                   </div>
                 </div>
               ))}

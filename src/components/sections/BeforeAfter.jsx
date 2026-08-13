@@ -3,10 +3,12 @@ import styles from './BeforeAfter.module.css';
 import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import { fetchApi } from '../../lib/api';
+import { useLanguage } from '../../context/LanguageContext';
 
 const BeforeAfter = () => {
   const scrollRef = useRef(null);
   const sectionRef = useScrollReveal();
+  const { t } = useLanguage();
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -49,7 +51,7 @@ const BeforeAfter = () => {
         <div ref={sectionRef} className={`glass-card ${styles.wrapper} reveal-scale`}>
           <div className={styles.header}>
             <div className={styles.eyebrow}>
-              Before & After
+              {t('before-after-title')}
             </div>
             <div className={styles.navButtons}>
               <button className={styles.navBtn} onClick={() => scroll('left')} aria-label="Scroll left"><ArrowLeft size={16} /></button>

@@ -144,10 +144,16 @@ const translations = {
     "booking-none": "None",
     
     // Gallery & Before/After
+    "gallery-title": "Our Work Gallery",
     "gallery-subtitle": "Explore our full portfolio of handcrafted braids",
+    "gallery-view-full": "View Full Gallery",
+    "gallery-all": "All",
     "gallery-view": "View",
+    "before-after-title": "Before & After",
     "before-label": "Before",
-    "after-label": "After"
+    "after-label": "After",
+    "add-review": "Add Your Review",
+    "write-review": "Write a Review"
   },
   ar: {
     // Navigation
@@ -286,10 +292,16 @@ const translations = {
     "booking-none": "لا يوجد",
     
     // Gallery & Before/After
+    "gallery-title": "معرض أعمالنا",
     "gallery-subtitle": "اكتشفي تشكيلتنا الكاملة من الضفائر المصنوعة يدوياً",
+    "gallery-view-full": "عرض المعرض كاملاً",
+    "gallery-all": "الكل",
     "gallery-view": "عرض",
+    "before-after-title": "قبل وبعد",
     "before-label": "قبل",
-    "after-label": "بعد"
+    "after-label": "بعد",
+    "add-review": "أضفي تقييمك",
+    "write-review": "اكتبي تقييماً"
   }
 };
 
@@ -386,9 +398,11 @@ export const LanguageProvider = ({ children }) => {
             
             // Map Contact
             if (content.contactData) {
-              if (content.contactData.title) { newEn["contact-title"] = content.contactData.title; newAr["contact-title"] = content.contactData.title; }
-              if (content.contactData.slogan) { newEn["footer-slogan"] = content.contactData.slogan; newAr["footer-slogan"] = content.contactData.slogan; }
-              if (content.contactData.credit) { newEn["foot-credit"] = content.contactData.credit; newAr["foot-credit"] = content.contactData.credit; }
+              if (content.contactData.title) { newEn["contact-title"] = content.contactData.title; }
+              // Only override Arabic title if it actually existed dynamically, but since contact doesn't have an Arabic field in the DB yet, we leave it alone so it falls back to the hardcoded dictionary value "معلومات التواصل"
+              
+              if (content.contactData.slogan) { newEn["footer-slogan"] = content.contactData.slogan; }
+              if (content.contactData.credit) { newEn["foot-credit"] = content.contactData.credit; }
               
               const wp = content.contactData.whatsapp;
               const ig = content.contactData.instagram;

@@ -95,7 +95,7 @@ const Testimonials = () => {
         </div>
 
         <div className={styles.addReviewBtnContainer}>
-          <Button variant="outline" onClick={() => setIsModalOpen(true)}>Add Your Review</Button>
+          <Button variant="outline" onClick={() => setIsModalOpen(true)}>{t('add-review')}</Button>
         </div>
 
         {isModalOpen && (
